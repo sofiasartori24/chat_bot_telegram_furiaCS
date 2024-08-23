@@ -3,9 +3,6 @@ from dotenv import load_dotenv
 import telebot
 from web_scraping_hltv import Web_scrapper
 
-
-api_key = os.getenv("API_KEY")
-
 menu =  """
 👋 Olá, Furioso(a)! 🐾 
 Eu sou o bot oficial do FURIA CS2. 🎯
@@ -21,6 +18,8 @@ Aqui você fica por dentro de tudo sobre o melhor time 🔥🔥🔥!
 """
 #/reminder [hora] - Defina um lembrete para não perder a próxima partida. maybe do later
 
+load_dotenv()
+api_key = os.getenv("API_KEY")
 #initializing bot
 bot = telebot.TeleBot(api_key)
 
