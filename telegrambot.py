@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import telebot
 from web_scraping_hltv import Web_scrapper
 
-#my api key (remember to make private)
+
 api_key = os.getenv("API_KEY")
 
 menu =  """
