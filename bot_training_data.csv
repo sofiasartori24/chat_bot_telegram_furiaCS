@@ -1,0 +1,386 @@
+Sentence,Intent
+quais são as próximas partidas do furia,next_match
+quando o furia vai jogar de novo,next_match
+me fala os próximos jogos do furia,next_match
+quais são os próximos confrontos do furia,next_match
+quando é a próxima partida do furia,next_match
+tem algum jogo do furia hoje,next_match
+qual o próximo jogo do furia,next_match
+quando vai ser o próximo confronto do furia,next_match
+o furia vai jogar amanhã?,next_match
+me diz quando será o próximo jogo do furia,next_match
+o furia tem alguma partida marcada?,next_match
+qual a data do próximo jogo do furia,next_match
+o furia tem algum jogo em breve?,next_match
+o próximo jogo do furia é quando?,next_match
+quais são as datas dos próximos jogos do furia,next_match
+quando o furia vai entrar em ação de novo?,next_match
+próximos jogos do furia?,next_match
+tem algum jogo do furia nos próximos dias?,next_match
+me fala a data dos próximos jogos do furia,next_match
+quando o furia vai competir de novo?,next_match
+me diga o próximo jogo do furia,next_match
+qual é o próximo confronto do furia?,next_match
+qual é o próximo evento do furia?,next_match
+quais são os próximos adversários do furia?,next_match
+qual é o próximo torneio do furia?,next_match
+quais times vão enfrentar o furia nas próximas partidas?,next_match
+quando é o próximo campeonato do furia?,next_match
+o furia tem jogo esta semana?,next_match
+o furia vai jogar hoje?,next_match
+me mostre o calendário dos próximos jogos do furia,next_match
+o furia joga essa semana?,next_match
+quais são as próximas competições do furia?,next_match
+qual é a próxima competição do furia?,next_match
+quem o furia vai enfrentar no próximo jogo?,next_match
+quais são os próximos torneios do furia?,next_match
+quando o furia vai competir novamente?,next_match
+quem o furia enfrenta na próxima partida?,next_match
+tem algum jogo do furia em breve?,next_match
+quando será o próximo jogo do furia?,next_match
+quando vai ser a próxima partida do furia?,next_match
+qual o próximo adversário do furia?,next_match
+qual o próximo campeonato do furia?,next_match
+quando o furia vai jogar a próxima partida?,next_match
+quando o furia joga a próxima partida?,next_match
+o furia vai participar de algum evento nos próximos dias?,next_match
+o furia tem alguma partida agendada?,next_match
+quando é o próximo jogo de CS do furia?,next_match
+qual a data do próximo confronto do furia?,next_match
+me fala os próximos eventos do furia,next_match
+qual o próximo jogo de CS do furia?,next_match
+me mostre as últimas partidas,last_match
+qual foi o último jogo do furia,last_match
+como foi o último confronto do furia,last_match
+quais foram os últimos jogos do furia,last_match
+me fala das últimas partidas do furia,last_match
+quais foram os últimos resultados do furia?,last_match
+qual foi o resultado do último jogo do furia?,last_match
+quem o furia enfrentou na última partida?,last_match
+como terminou o último confronto do furia?,last_match
+me diz como foi o último jogo do furia,last_match
+o furia ganhou o último jogo?,last_match
+me fala sobre os últimos resultados do furia,last_match
+qual foi o placar do último jogo do furia?,last_match
+o furia jogou bem na última partida?,last_match
+qual foi o último torneio que o furia participou?,last_match
+quem venceu o último jogo do furia?,last_match
+o furia venceu o último confronto?,last_match
+como foi o desempenho do furia no último jogo?,last_match
+quais foram os adversários do furia nas últimas partidas?,last_match
+me mostre os últimos jogos do furia,last_match
+qual foi o resultado da última partida do furia?,last_match
+o furia perdeu o último jogo?,last_match
+me fala como foi o último jogo do furia,last_match
+quais foram os últimos jogos de CS do furia?,last_match
+quais foram os últimos confrontos do furia?,last_match
+como foi o último evento do furia?,last_match
+o furia se saiu bem no último jogo?,last_match
+quais foram os últimos campeonatos do furia?,last_match
+o furia competiu recentemente?,last_match
+como o furia se saiu nas últimas partidas?,last_match
+quais são os últimos resultados do furia?,last_match
+quais times o furia enfrentou nos últimos jogos?,last_match
+qual foi a última competição do furia?,last_match
+me mostra o último jogo do furia,last_match
+me mostre os resultados das últimas partidas do furia,last_match
+quem o furia derrotou na última partida?,last_match
+qual foi o placar do último jogo do furia?,last_match
+quem venceu a última partida do furia?,last_match
+como o furia jogou no último confronto?,last_match
+o furia jogou recentemente?,last_match
+quais foram os últimos jogos do furia?,last_match
+me diga como foi a última partida do furia,last_match
+qual é a lineup atual do furia,lineup
+quem está jogando no furia,lineup
+me mostra os jogadores da lineup do furia,lineup
+quem está na lineup do furia,lineup
+quais são os jogadores do furia agora,lineup
+quem são os atuais jogadores do furia?,lineup
+qual a lineup do furia?,lineup
+me diga quem está na lineup do furia,lineup
+quais são os jogadores que estão jogando no furia?,lineup
+quem compõe a lineup do furia?,lineup
+quem está na equipe do furia agora?,lineup
+quem são os jogadores do furia?,lineup
+me mostre a lineup completa do furia,lineup
+quais jogadores fazem parte da lineup do furia?,lineup
+quem está jogando na equipe do furia?,lineup
+qual a lineup do furia atualmente?,lineup
+quem está representando o furia nas partidas?,lineup
+quais são os nomes dos jogadores da lineup do furia?,lineup
+me diga os nomes dos jogadores da lineup do furia,lineup
+quem está jogando pelo furia agora?,lineup
+me fale sobre os jogadores atuais do furia,lineup
+quais são os atuais membros da lineup do furia?,lineup
+quais jogadores fazem parte da lineup atual do furia?,lineup
+qual é a formação atual do furia?,lineup
+quem faz parte da lineup do furia atualmente?,lineup
+quem são os jogadores da lineup do furia neste momento?,lineup
+quais são os jogadores da equipe atual do furia?,lineup
+me mostre a lineup atual do furia,lineup
+qual a formação do furia?,lineup
+quem são os membros da lineup do furia?,lineup
+qual o calendário do próximo evento,schedule
+quando é o próximo evento do furia,schedule
+quais são os próximos eventos do furia,schedule
+quando é o próximo campeonato do furia,schedule
+me fala o calendário do próximo evento,schedule
+quando o furia vai competir no próximo evento?,schedule
+qual o calendário do próximo campeonato do furia?,schedule
+quais são as datas dos próximos eventos do furia?,schedule
+me mostre o calendário do próximo evento do furia,schedule
+quando é o próximo torneio que o furia vai competir?,schedule
+quais são os próximos campeonatos do furia?,schedule
+qual o próximo campeonato do furia?,schedule
+quando é o próximo evento em que o furia vai jogar?,schedule
+quais são os próximos eventos de CS do furia?,schedule
+me mostra o calendário do próximo evento do furia,schedule
+quais são as próximas competições do furia?,schedule
+qual o próximo evento do furia?,schedule
+qual é o nick do fallen,player_stats
+me mostra o nick do fallen,player_stats
+você sabe o nick do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o nome do fallen,player_stats
+me mostra o nome do fallen,player_stats
+você sabe o nome do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o idade do fallen,player_stats
+me mostra o idade do fallen,player_stats
+você sabe o idade do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o rating 2.0 do fallen,player_stats
+me mostra o rating 2.0 do fallen,player_stats
+você sabe o rating 2.0 do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o dpr do fallen,player_stats
+me mostra o dpr do fallen,player_stats
+você sabe o dpr do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o kast do fallen,player_stats
+me mostra o kast do fallen,player_stats
+você sabe o kast do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o impact do fallen,player_stats
+me mostra o impact do fallen,player_stats
+você sabe o impact do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o adr do fallen,player_stats
+me mostra o adr do fallen,player_stats
+você sabe o adr do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o kpr do fallen,player_stats
+me mostra o kpr do fallen,player_stats
+você sabe o kpr do fallen,player_stats
+quais são as estatísticas do fallen,player_stats
+me mostre as estatísticas do fallen,player_stats
+qual é o nick do yuurih,player_stats
+me mostra o nick do yuurih,player_stats
+você sabe o nick do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o nome do yuurih,player_stats
+me mostra o nome do yuurih,player_stats
+você sabe o nome do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o idade do yuurih,player_stats
+me mostra o idade do yuurih,player_stats
+você sabe o idade do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o rating 2.0 do yuurih,player_stats
+me mostra o rating 2.0 do yuurih,player_stats
+você sabe o rating 2.0 do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o dpr do yuurih,player_stats
+me mostra o dpr do yuurih,player_stats
+você sabe o dpr do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o kast do yuurih,player_stats
+me mostra o kast do yuurih,player_stats
+você sabe o kast do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o impact do yuurih,player_stats
+me mostra o impact do yuurih,player_stats
+você sabe o impact do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o adr do yuurih,player_stats
+me mostra o adr do yuurih,player_stats
+você sabe o adr do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o kpr do yuurih,player_stats
+me mostra o kpr do yuurih,player_stats
+você sabe o kpr do yuurih,player_stats
+quais são as estatísticas do yuurih,player_stats
+me mostre as estatísticas do yuurih,player_stats
+qual é o nick do kscerato,player_stats
+me mostra o nick do kscerato,player_stats
+você sabe o nick do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o nome do kscerato,player_stats
+me mostra o nome do kscerato,player_stats
+você sabe o nome do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o idade do kscerato,player_stats
+me mostra o idade do kscerato,player_stats
+você sabe o idade do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o rating 2.0 do kscerato,player_stats
+me mostra o rating 2.0 do kscerato,player_stats
+você sabe o rating 2.0 do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o dpr do kscerato,player_stats
+me mostra o dpr do kscerato,player_stats
+você sabe o dpr do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o kast do kscerato,player_stats
+me mostra o kast do kscerato,player_stats
+você sabe o kast do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o impact do kscerato,player_stats
+me mostra o impact do kscerato,player_stats
+você sabe o impact do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o adr do kscerato,player_stats
+me mostra o adr do kscerato,player_stats
+você sabe o adr do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o kpr do kscerato,player_stats
+me mostra o kpr do kscerato,player_stats
+você sabe o kpr do kscerato,player_stats
+quais são as estatísticas do kscerato,player_stats
+me mostre as estatísticas do kscerato,player_stats
+qual é o nick do chelo,player_stats
+me mostra o nick do chelo,player_stats
+você sabe o nick do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o nome do chelo,player_stats
+me mostra o nome do chelo,player_stats
+você sabe o nome do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o idade do chelo,player_stats
+me mostra o idade do chelo,player_stats
+você sabe o idade do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o rating 2.0 do chelo,player_stats
+me mostra o rating 2.0 do chelo,player_stats
+você sabe o rating 2.0 do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o dpr do chelo,player_stats
+me mostra o dpr do chelo,player_stats
+você sabe o dpr do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o kast do chelo,player_stats
+me mostra o kast do chelo,player_stats
+você sabe o kast do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o impact do chelo,player_stats
+me mostra o impact do chelo,player_stats
+você sabe o impact do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o adr do chelo,player_stats
+me mostra o adr do chelo,player_stats
+você sabe o adr do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o kpr do chelo,player_stats
+me mostra o kpr do chelo,player_stats
+você sabe o kpr do chelo,player_stats
+quais são as estatísticas do chelo,player_stats
+me mostre as estatísticas do chelo,player_stats
+qual é o nick do skullz,player_stats
+me mostra o nick do skullz,player_stats
+você sabe o nick do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+qual é o nome do skullz,player_stats
+me mostra o nome do skullz,player_stats
+você sabe o nome do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+qual é o idade do skullz,player_stats
+me mostra o idade do skullz,player_stats
+você sabe o idade do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+qual é o rating 2.0 do skullz,player_stats
+me mostra o rating 2.0 do skullz,player_stats
+você sabe o rating 2.0 do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+qual é o dpr do skullz,player_stats
+me mostra o dpr do skullz,player_stats
+você sabe o dpr do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+qual é o kast do skullz,player_stats
+me mostra o kast do skullz,player_stats
+você sabe o kast do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+qual é o impact do skullz,player_stats
+me mostra o impact do skullz,player_stats
+você sabe o impact do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+qual é o adr do skullz,player_stats
+me mostra o adr do skullz,player_stats
+você sabe o adr do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+qual é o kpr do skullz,player_stats
+me mostra o kpr do skullz,player_stats
+você sabe o kpr do skullz,player_stats
+quais são as estatísticas do skullz,player_stats
+me mostre as estatísticas do skullz,player_stats
+oi,greeting
+olá,greeting
+e aí,greeting
+salve,greeting
+fala aí,greeting
+como vai?,greeting
+tudo certo?,greeting
+como você está?,greeting
+"oi, tudo bem?",greeting
+"olá, como vai?",greeting
+como você pode me ajudar,help
+quais são as suas funções,help
+me fala o que você pode fazer,help
+como posso usar você,help
+o que você faz,help
+qual é o seu trabalho,help
+como posso interagir com você,help
+o que posso perguntar para você,help
+como você funciona?,help
+me explica suas funções,help
+você pode me ajudar com algo?,help
