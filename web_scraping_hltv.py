@@ -10,6 +10,15 @@ from selenium.common.exceptions import NoSuchElementException
 
 class Web_scrapper():
     def __init__(self) -> None:
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+
+        self.service = Service("/usr/bin/chromedriver")
+        self.driver = webdriver.Chrome(service=self.service, options=chrome_options)
+
         self.url_for_matches = 'https://www.hltv.org/team/8297/furia#tab-matchesBox'
         self.url_for_events = 'https://www.hltv.org/team/8297/furia#tab-eventsBox'
         self.url_for_lineup = 'https://www.hltv.org/team/8297/furia#tab-rosterBox'
@@ -22,7 +31,7 @@ class Web_scrapper():
             "Connection": "keep-alive",
             "Upgrade-Insecure-Requests": "1",
         }
-        
+
     def get_upcoming_events(self):
         try:
             # Configurações do Selenium para executar o Chrome em modo headless (sem interface gráfica)
@@ -53,7 +62,6 @@ class Web_scrapper():
                 except NoSuchElementException as e:
                     print(f"Erro ao processar o evento: {e}")
 
-            # Fecha o navegador
             driver.quit()
 
             return events
