@@ -1,24 +1,9 @@
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from webdriver_manager.chrome import ChromeDriverManager
 
 class Web_scrapper():
     def __init__(self) -> None:
-        chrome_options = Options()
-        chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-
-        # Usando o WebDriver Manager para gerenciar o Chromedriver
-        service = Service(ChromeDriverManager().install())
-        self.driver = webdriver.Chrome(service=service, options=chrome_options)
 
         self.url_for_matches = 'https://www.hltv.org/team/8297/furia#tab-matchesBox'
         self.url_for_events = 'https://www.hltv.org/team/8297/furia#tab-eventsBox'
