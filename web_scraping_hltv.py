@@ -2,8 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 
 class Web_scrapper():
     def __init__(self) -> None:
@@ -19,30 +22,44 @@ class Web_scrapper():
             "Connection": "keep-alive",
             "Upgrade-Insecure-Requests": "1",
         }
-
+        
     def get_upcoming_events(self):
         try:
-            response = requests.get(self.url_for_events, headers=self.headers)
-            response.raise_for_status()  # Lança uma exceção para códigos de status HTTP de erro
-            soup = BeautifulSoup(response.content, 'html.parser')
+            # Configurações do Selenium para executar o Chrome em modo headless (sem interface gráfica)
+            options = Options()
+            options.headless = True
+
+            # Inicializa o WebDriver do Chrome
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+            
+            # Acessa a URL dos eventos
+            driver.get(self.url_for_events)
+            
+            # Espera o carregamento do conteúdo relevante (pode-se ajustar isso com WebDriverWait, se necessário)
+            
+            # Extrai os eventos da página
             events = []
-            divs = soup.find_all('div', class_='sub-tab-content-events')
+            event_elements = driver.find_elements(By.CLASS_NAME, 'sub-tab-content-events')
 
-            for evento in divs:
-                event_name = evento.find('div', class_='eventbox-eventname').get_text(strip=True)
-                event_date = evento.find('div', class_='eventbox-date').get_text(strip=True)
+            for evento in event_elements:
+                try:
+                    event_name = evento.find_element(By.CLASS_NAME, 'eventbox-eventname').text.strip()
+                    event_date = evento.find_element(By.CLASS_NAME, 'eventbox-date').text.strip()
+                    
+                    events.append({
+                        'name': event_name,
+                        'date': event_date
+                    })
+                except NoSuchElementException as e:
+                    print(f"Erro ao processar o evento: {e}")
 
-                events.append({
-                    'name': event_name,
-                    'date': event_date
-                })
+            # Fecha o navegador
+            driver.quit()
+
             return events
 
-        except requests.RequestException as e:
-            print(f"Erro ao fazer a requisição: {e}")
-            return []
         except Exception as e:
-            print(f"Erro ao processar eventos: {e}")
+            print(f"Erro ao fazer o scraping dos eventos: {e}")
             return []
 
     def get_previous_five_matches(self):
