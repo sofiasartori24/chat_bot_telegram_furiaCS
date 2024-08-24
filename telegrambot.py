@@ -82,9 +82,10 @@ def current_players(message):
 
 @bot.message_handler(commands=["schedule"])
 def schedule(message):
-    event = web_scrapper.get_upcoming_events()[0]
+    events = web_scrapper.get_upcoming_events()
 
-    if event:
+    if events:
+        event = events[0]
         response_message = "Esses é o próximo evento da Furia! Não esqueça de torcer 🔥:\n\n"
         response_message += (
             f"Nome: {event['name']}\n"
