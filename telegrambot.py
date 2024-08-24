@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 import telebot
 from web_scraping_hltv import WebScrapper
+from language_processing import LanguageProcessing
 
 # Load environment variables from .env file
 load_dotenv()
@@ -10,6 +11,7 @@ api_key = os.getenv("API_KEY")
 # Initialize the bot with the API key
 bot = telebot.TeleBot(api_key)
 web_scrapper = WebScrapper()
+classifier = LanguageProcessing()
 
 # Define the menu message
 menu = """
@@ -84,7 +86,7 @@ def schedule(message):
 
     if events:
         event = events[0]
-        response_message = "Esses é o próximo evento da Furia! Não esqueça de torcer 🔥:\n\n"
+        response_message = "Esse é o próximo evento da Furia! Não esqueça de torcer 🔥:\n\n"
         response_message += (
             f"Nome: {event['name']}\n"
             f"📅 Data: {event['date']}\n\n"
@@ -126,7 +128,7 @@ def player_stats_fallen(message):
         )
         bot.reply_to(message, response_message)
     else:
-        bot.reply_to(message, "Parece que não estatísticas disponíveis. Sinto Muito!")
+        bot.reply_to(message, "Parece que não há estatísticas disponíveis. Sinto Muito!")
 
 @bot.message_handler(commands=['yuurih'])
 def player_stats_yuurih(message):
@@ -148,7 +150,7 @@ def player_stats_yuurih(message):
         )
         bot.reply_to(message, response_message)
     else:
-        bot.reply_to(message, "Parece que não estatísticas disponíveis. Sinto Muito!")
+        bot.reply_to(message, "Parece que não há estatísticas disponíveis. Sinto Muito!")
 
 @bot.message_handler(commands=['KSCERATO'])
 def player_stats_kscerato(message):
@@ -170,7 +172,7 @@ def player_stats_kscerato(message):
         )
         bot.reply_to(message, response_message)
     else:
-        bot.reply_to(message, "Parece que não estatísticas disponíveis. Sinto Muito!")
+        bot.reply_to(message, "Parece que não há estatísticas disponíveis. Sinto Muito!")
 
 @bot.message_handler(commands=['chelo'])
 def player_stats_chelo(message):
@@ -192,7 +194,7 @@ def player_stats_chelo(message):
         )
         bot.reply_to(message, response_message)
     else:
-        bot.reply_to(message, "Parece que não estatísticas disponíveis. Sinto Muito!")
+        bot.reply_to(message, "Parece que não há estatísticas disponíveis. Sinto Muito!")
 
 @bot.message_handler(commands=['skullz'])
 def player_stats_skullz(message):
@@ -214,14 +216,111 @@ def player_stats_skullz(message):
         )
         bot.reply_to(message, response_message)
     else:
-        bot.reply_to(message, "Parece que não estatísticas disponíveis. Sinto Muito!")
+        bot.reply_to(message, "Parece que não há estatísticas disponíveis. Sinto Muito!")
 
-def check_for_base_response(message):
-    """Determines if the message should trigger the base response."""
-    return True
+def get_player_stats(message):
+    if 'chelo' in message.text.lower():
+        player_stats_chelo(message)
+    elif 'fallen' in message.text.lower() or 'professor' in message.text.lower():
+        print('fallen' in message.text.lower())
+        player_stats_fallen(message)
+    elif 'kscerato' in message.text.lower():
+        player_stats_kscerato(message)
+    elif 'skullz' in message.text.lower():
+        player_stats_skullz(message)
+    elif 'yuurih' in message.text.lower() or 'yurih' in message.text.lower():
+        player_stats_yuurih(message)
+    else:
+        bot.reply_to(message, "Desculpe, não entendi seu comando. Tente novamente.")
 
-@bot.message_handler(func=check_for_base_response)
-def base_response(message):
-    """Handles any messages that should trigger the base response."""
-    bot.reply_to(message, menu)
+@bot.message_handler(commands=['help'])
+def help(message):
+    help_message = """
+    🔍 Parece que você está com dúvidas sobre o que eu posso fazer. Não se preocupe, aqui estão minhas funções:
+
+    🛠️ Comandos Disponíveis:
+    
+    - /nextmatch - Quer saber quando a FURIA vai entrar em ação novamente? Eu te mostro as próximas partidas! 🗓️
+    
+    - /lastmatch - Se perdeu as últimas batalhas da FURIA, é só me chamar que eu trago os resultados recentes! ⚔️
+
+    - /lineup - Ficou curioso sobre quem está no servidor? Veja a line up atual da FURIA! 💪
+
+    - /playerstats - Quer saber as stats de um jogador específico? Consulta as lendas:
+    • /FalleN 
+    • /yuurih 
+    • /KSCERATO 
+    • /chelo 
+    • /skullz 
+
+    - /schedule - Não perca nenhum campeonato! Te mostro o calendário do próximo evento. 🏆
+
+    💬 Além disso, você pode simplesmente me perguntar diretamente, como se fosse um bate-papo. Vai, pergunta aí e a gente troca uma ideia sobre o FURIA! 🐾🔥
+    """
+
+    bot.reply_to(message, help_message)
+
+@bot.message_handler(commands=['greetings'])
+def greetings(message):
+    grettings_message = """
+    🐾 Bem-vindo ao bot oficial do FURIA CS2! 🎯🔥
+
+    Aqui você encontra tudo sobre o FURIA e nossos guerreiros do CS2. Você pode usar comandos ou simplesmente perguntar diretamente para mim, que eu vou te ajudar! 🐾😎
+
+    🎮 Comandos Disponíveis:
+    - /nextmatch: Veja as próximas batalhas da FURIA nos servidores. ⚔️
+    - /lastmatch: Mostra os resultados das últimas partidas disputadas. 🏆
+    - /lineup: Conheça a line atual que está jogando pra cima! 💪
+    - /playerstats: Consulte as estatísticas detalhadas de um jogador. Escolha entre nossos monstros:
+    - /FalleN
+    - /yuurih
+    - /KSCERATO
+    - /chelo
+    - /skullz
+    - /schedule: Confira o calendário completo do próximo evento. 📅
+
+    🔥 Dica: Você também pode me perguntar coisas como:
+    - "Quando é a próxima partida do FURIA?"
+    - "Me mostra a line atual!"
+    - "Quais foram as últimas vitórias?"
+
+    💬 Vamos juntos torcer para o FURIA! Bora dominar os mapas e subir nos rankings! GG WP! 🏅🐾
+    """
+
+
+    bot.reply_to(message, grettings_message)
+
+@bot.message_handler(func=lambda message: True)
+def handle_message(message):
+    user_input = message.text.lower()
+    intent = classifier.detect_intent(user_input)
+    print(intent)
+    
+    if intent == "next_match":
+        next_match(message)
+    elif intent == "last_match":
+        last_match(message)
+    elif intent == "lineup":
+        current_players(message)
+    elif intent == "schedule":
+        schedule(message)
+    elif intent == "player_stats":
+        get_player_stats(message)
+    elif intent == "greeting":
+        greetings(message)
+    elif intent == "help":
+        help(message)
+    else:
+        bot.reply_to(message, "Desculpe, não entendi seu comando. Tente novamente.")
+
+
+
+# def check_for_base_response(message):
+#     """Determines if the message should trigger the base response."""
+#     return True
+
+# @bot.message_handler(func=check_for_base_response)
+# def base_response(message):
+#     """Handles any messages that should trigger the base response."""
+#     bot.reply_to(message, menu)
 
