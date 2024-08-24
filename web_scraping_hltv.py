@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 
 class Web_scrapper():
     def __init__(self) -> None:
@@ -10,7 +13,9 @@ class Web_scrapper():
         self.url_for_player_stats = 'https://www.hltv.org/stats/players/'
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept-Language': 'en-US,en;q=0.9'
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive'
         }
 
     def get_upcoming_events(self):
